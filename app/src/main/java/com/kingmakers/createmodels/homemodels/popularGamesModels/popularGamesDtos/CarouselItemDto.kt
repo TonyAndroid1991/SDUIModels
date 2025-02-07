@@ -1,0 +1,22 @@
+package com.kingmakers.createmodels.homemodels.popularGamesModels.popularGamesDtos
+
+import com.kingmakers.createmodels.MappableToDomain
+import com.kingmakers.createmodels.homemodels.popularGamesModels.domainPopularGames.CarouselItem
+import com.kingmakers.createmodels.homePageCommonModels.ImageDto
+
+data class CarouselItemDto(
+    val activeUsers: String?,
+    val icon: ImageDto?,
+    val carouselImage: ImageDto?,
+    val position: String?
+): MappableToDomain<CarouselItem> {
+
+    override fun toDomain(): CarouselItem {
+        return CarouselItem(
+            activeUsers = activeUsers.orEmpty(),
+            icon = icon?.toDomain() ?: ImageDto.EMPTY,
+            image = carouselImage?.toDomain() ?: ImageDto.EMPTY,
+            position = position.orEmpty()
+        )
+    }
+}
