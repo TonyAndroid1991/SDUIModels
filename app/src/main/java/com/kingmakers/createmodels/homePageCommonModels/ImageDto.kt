@@ -6,8 +6,7 @@ data class ImageDto(
     val alt: String?,
     val imageColor: String?,
     val imageName: String?,
-    val imageUrl: String?,
-    val type: String?
+    val imageUrl: String?
 ): MappableToDomain<Image> {
 
     override fun toDomain(): Image {
@@ -15,8 +14,7 @@ data class ImageDto(
             alt = alt.orEmpty(),
             imageColor = imageColor.orEmpty(),
             imageName = imageName.orEmpty(),
-            imageUrl = imageUrl.orEmpty(),
-            type = type.orEmpty()
+            imageUrl = imageUrl.orEmpty()
         )
     }
 
@@ -25,8 +23,7 @@ data class ImageDto(
             alt = "",
             imageColor = "",
             imageName = "",
-            imageUrl = "",
-            type = ""
+            imageUrl = ""
         )
     }
 }

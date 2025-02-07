@@ -4,6 +4,5 @@ data class Image(
     val alt: String,
     val imageColor: String,
     val imageName: String,
-    val imageUrl: String,
-    val type: String
+    val imageUrl: String
 )
