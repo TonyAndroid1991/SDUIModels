@@ -21,7 +21,7 @@ data class ImageDto(
     }
 
     companion object {
-        val EMPTY = Image(
+        fun emptyImage() = Image(
             alt = "",
             imageColor = "",
             imageName = "",

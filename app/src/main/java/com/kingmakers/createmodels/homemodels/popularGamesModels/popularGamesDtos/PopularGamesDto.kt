@@ -17,7 +17,7 @@ data class PopularGamesDto(
         return PopularGames(
             actions = actions?.map { it.toDomain() } ?: emptyList(),
             carouselItems = carouselItems?.map { it.toDomain() } ?: emptyList(),
-            header = header?.toDomain() ?: Header("", "", ImageDto.EMPTY)
+            header = header?.toDomain() ?: HeaderDto.emptyHeader()
         )
     }
 }

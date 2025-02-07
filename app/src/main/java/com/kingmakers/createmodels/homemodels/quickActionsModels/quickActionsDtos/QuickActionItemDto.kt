@@ -13,7 +13,7 @@ data class QuickActionItemDto(
     override fun toDomain(): QuickActionItem {
         return QuickActionItem(
             title = title.orEmpty(),
-            image = image?.toDomain() ?: ImageDto.EMPTY
+            image = image?.toDomain() ?: ImageDto.emptyImage()
         )
     }
 }

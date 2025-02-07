@@ -4,6 +4,7 @@ import com.kingmakers.createmodels.homePageCommonModels.Action
 import com.kingmakers.createmodels.homePageCommonModels.Header
 import com.kingmakers.createmodels.homePageCommonModels.Image
 import com.kingmakers.createmodels.MappableToDomain
+import com.kingmakers.createmodels.homePageCommonModels.HeaderDto
 import com.kingmakers.createmodels.homePageCommonModels.ImageDto
 import com.kingmakers.createmodels.homemodels.fastAndSecurePaymentsModels.domainFastAndSecurePayments.FastAndSecurePayments
 
@@ -15,7 +16,7 @@ data class FastAndSecurePaymentsDto(
     override fun toDomain(): FastAndSecurePayments {
         return FastAndSecurePayments(
             actions = actions ?: emptyList(),
-            header = header ?: Header("", "", ImageDto.EMPTY),
+            header = header ?: HeaderDto.emptyHeader(),
             images = images ?: emptyList(),
         )
     }

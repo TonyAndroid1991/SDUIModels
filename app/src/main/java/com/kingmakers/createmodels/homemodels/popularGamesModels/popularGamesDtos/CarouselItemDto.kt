@@ -14,8 +14,8 @@ data class CarouselItemDto(
     override fun toDomain(): CarouselItem {
         return CarouselItem(
             activeUsers = activeUsers.orEmpty(),
-            icon = icon?.toDomain() ?: ImageDto.EMPTY,
-            image = carouselImage?.toDomain() ?: ImageDto.EMPTY,
+            icon = icon?.toDomain() ?: ImageDto.emptyImage(),
+            image = carouselImage?.toDomain() ?: ImageDto.emptyImage(),
             position = position.orEmpty()
         )
     }

@@ -16,7 +16,7 @@ data class PopularGamesWinnersDto(
     override fun toDomain(): PopularGamesWinners {
        return PopularGamesWinners(
             actions = actions?.map { it.toDomain() } ?: emptyList(),
-            header = header?.toDomain() ?: Header("", "", ImageDto.EMPTY),
+            header = header?.toDomain() ?: HeaderDto.emptyHeader(),
             winners = items?.map { it.toDomain() } ?: emptyList()
         )
     }

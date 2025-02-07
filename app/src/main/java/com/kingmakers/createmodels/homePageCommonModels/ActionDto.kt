@@ -17,4 +17,13 @@ data class ActionDto(
             type = type.orEmpty()
         )
     }
+
+    companion object {
+        fun emptyAction() = Action(
+            id = "",
+            label = "",
+            screenId = "",
+            type = ""
+        )
+    }
 }

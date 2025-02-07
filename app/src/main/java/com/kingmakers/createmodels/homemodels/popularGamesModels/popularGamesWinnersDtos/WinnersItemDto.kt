@@ -16,7 +16,7 @@ data class WinnersItemDto(
         return WinnersItem(
             amount = amount.orEmpty(),
             date = date.orEmpty(),
-            gameImage = gameImage?.toDomain() ?: ImageDto.EMPTY,
+            gameImage = gameImage?.toDomain() ?: ImageDto.emptyImage(),
             userName = userName.orEmpty()
         )
     }

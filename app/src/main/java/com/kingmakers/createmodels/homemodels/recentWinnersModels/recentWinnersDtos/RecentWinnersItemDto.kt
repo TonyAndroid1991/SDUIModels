@@ -2,21 +2,22 @@ package com.kingmakers.createmodels.homemodels.recentWinnersModels.recentWinners
 
 import com.kingmakers.createmodels.MappableToDomain
 import com.kingmakers.createmodels.homePageCommonModels.Image
+import com.kingmakers.createmodels.homePageCommonModels.ImageDto
 import com.kingmakers.createmodels.homemodels.recentWinnersModels.domainRecentWinners.RecentWinnersItem
 
-data class RecentWinnersItemsDto(
+data class RecentWinnersItemDto(
     val attributedText: String?,
-    val badgeImage: Image?,
+    val badgeImage: ImageDto?,
     val badgeText: String?,
-    val gameImage: Image?
+    val gameImage: ImageDto?
 ) : MappableToDomain<RecentWinnersItem> {
 
     override fun toDomain(): RecentWinnersItem {
         return RecentWinnersItem(
             attributedText = attributedText.orEmpty(),
-            badgeImage = badgeImage ?: Image.EMPTY,
+            badgeImage = badgeImage?.toDomain() ?: ImageDto.emptyImage(),
             badgeText = badgeText.orEmpty(),
-            gameImage = gameImage ?: Image.EMPTY
+            gameImage = gameImage?.toDomain() ?: ImageDto.emptyImage()
         )
     }
 }

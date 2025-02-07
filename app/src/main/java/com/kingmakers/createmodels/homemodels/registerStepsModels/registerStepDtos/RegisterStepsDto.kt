@@ -17,10 +17,7 @@ data class RegisterStepsDto(
     override fun toDomain(): RegisterSteps {
         return RegisterSteps(
             actions = actions?.map { it.toDomain() } ?: emptyList(),
-            header = header?.toDomain() ?: Header(
-                "", "",
-                ImageDto.EMPTY
-            ),
+            header = header?.toDomain() ?: HeaderDto.emptyHeader(),
             informationMessage = informationMessage.orEmpty(),
             stepsItems = stepsItems?.map { it.toDomain() } ?: emptyList()
         )
