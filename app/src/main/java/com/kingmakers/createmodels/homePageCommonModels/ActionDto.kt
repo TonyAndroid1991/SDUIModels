@@ -5,7 +5,7 @@ import com.kingmakers.createmodels.MappableToDomain
 data class ActionDto(
     val id: String?,
     val label: String?,
-    val screenId: String?,
+    val path: String?,
     val type: String?
 ): MappableToDomain<Action> {
 
@@ -13,7 +13,7 @@ data class ActionDto(
         return Action(
             id = id.orEmpty(),
             label = label.orEmpty(),
-            screenId = screenId.orEmpty(),
+            path = path.orEmpty(),
             type = type.orEmpty()
         )
     }
@@ -22,7 +22,7 @@ data class ActionDto(
         fun emptyAction() = Action(
             id = "",
             label = "",
-            screenId = "",
+            path = "",
             type = ""
         )
     }

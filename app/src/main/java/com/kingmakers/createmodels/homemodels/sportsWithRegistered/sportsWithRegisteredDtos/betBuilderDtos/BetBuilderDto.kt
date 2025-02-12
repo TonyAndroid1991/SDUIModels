@@ -25,4 +25,16 @@ data class BetBuilderDto(
             url = url ?: ""
         )
     }
+
+    companion object {
+        fun emptyBetBuilder() = BetBuilder(
+            actions = emptyList(),
+            buttonTitle = "",
+            date = "",
+            betDetails = emptyList(),
+            match = "",
+            odds = "",
+            url = ""
+        )
+    }
 }

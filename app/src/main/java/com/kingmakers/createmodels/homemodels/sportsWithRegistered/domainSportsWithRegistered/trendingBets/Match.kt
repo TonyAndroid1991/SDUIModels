@@ -6,5 +6,5 @@ data class Match(
     val odds: String,
     val teamLogo: Image,
     val trendingTeamName: String,
-    val vsTeam: String,
+    val matchDescription: String,
 )

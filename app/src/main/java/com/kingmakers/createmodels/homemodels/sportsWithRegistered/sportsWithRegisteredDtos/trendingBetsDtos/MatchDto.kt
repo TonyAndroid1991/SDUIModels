@@ -8,7 +8,7 @@ data class MatchDto(
     val odds: String?,
     val teamLogo: ImageDto?,
     val trendingTeamName: String?,
-    val vsTeam: String?,
+    val matchDescription: String?,
 ) : MappableToDomain<Match> {
 
     override fun toDomain(): Match {
@@ -16,7 +16,7 @@ data class MatchDto(
             odds = odds ?: "",
             teamLogo = teamLogo?.toDomain() ?: ImageDto.emptyImage(),
             trendingTeamName = trendingTeamName ?: "",
-            vsTeam = vsTeam ?: ""
+            matchDescription = matchDescription ?: ""
         )
     }
 }
