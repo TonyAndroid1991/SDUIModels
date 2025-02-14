@@ -1,11 +1,10 @@
 package com.kingmakers.createmodels.homemodels.fastAndSecurePaymentsModels.fastAndSecurePaymentsDtos
 
+import com.kingmakers.createmodels.MappableToDomain
 import com.kingmakers.createmodels.homePageCommonModels.Action
 import com.kingmakers.createmodels.homePageCommonModels.Header
-import com.kingmakers.createmodels.homePageCommonModels.Image
-import com.kingmakers.createmodels.MappableToDomain
 import com.kingmakers.createmodels.homePageCommonModels.HeaderDto
-import com.kingmakers.createmodels.homePageCommonModels.ImageDto
+import com.kingmakers.createmodels.homePageCommonModels.Image
 import com.kingmakers.createmodels.homemodels.fastAndSecurePaymentsModels.domainFastAndSecurePayments.FastAndSecurePayments
 
 data class FastAndSecurePaymentsDto(

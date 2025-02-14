@@ -1,7 +1,6 @@
 package com.kingmakers.createmodels.homemodels.recentWinnersModels.recentWinnersDtos
 
 import com.kingmakers.createmodels.MappableToDomain
-import com.kingmakers.createmodels.homePageCommonModels.Image
 import com.kingmakers.createmodels.homePageCommonModels.ImageDto
 import com.kingmakers.createmodels.homemodels.recentWinnersModels.domainRecentWinners.RecentWinnersItem
 

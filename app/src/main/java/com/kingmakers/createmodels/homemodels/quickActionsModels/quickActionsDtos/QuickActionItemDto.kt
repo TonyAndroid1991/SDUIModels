@@ -1,7 +1,6 @@
 package com.kingmakers.createmodels.homemodels.quickActionsModels.quickActionsDtos
 
 import com.kingmakers.createmodels.MappableToDomain
-import com.kingmakers.createmodels.homePageCommonModels.Image
 import com.kingmakers.createmodels.homePageCommonModels.ImageDto
 import com.kingmakers.createmodels.homemodels.quickActionsModels.domainQuickActions.QuickActionItem
 

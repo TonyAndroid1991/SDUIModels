@@ -1,10 +1,11 @@
 package com.kingmakers.createmodels.homemodels.sportsWithRegistered.domainSportsWithRegistered.trendingBets
 
+import com.kingmakers.createmodels.ScreenModel
 import com.kingmakers.createmodels.homePageCommonModels.Action
 import com.kingmakers.createmodels.homemodels.sportsWithRegistered.domainSportsWithRegistered.domainBetBuilder.BetBuilder
 
 data class TrendingBet(
-    val actions: List<Action>,
+    override val actions: List<Action>,
     val betBuilder: BetBuilder,
     val betDetails: BetDetails,
     val betId: String,
@@ -16,4 +17,4 @@ data class TrendingBet(
     val placedCount: String,
     val potentialWinnings: String,
     val selections: String
-)
+) : ScreenModel

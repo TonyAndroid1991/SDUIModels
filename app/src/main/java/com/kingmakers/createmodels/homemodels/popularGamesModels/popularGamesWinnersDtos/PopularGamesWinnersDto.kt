@@ -1,11 +1,9 @@
 package com.kingmakers.createmodels.homemodels.popularGamesModels.popularGamesWinnersDtos
 
 import com.kingmakers.createmodels.MappableToDomain
-import com.kingmakers.createmodels.homePageCommonModels.Header
-import com.kingmakers.createmodels.homemodels.popularGamesModels.domainPopularGamesWinners.PopularGamesWinners
 import com.kingmakers.createmodels.homePageCommonModels.ActionDto
 import com.kingmakers.createmodels.homePageCommonModels.HeaderDto
-import com.kingmakers.createmodels.homePageCommonModels.ImageDto
+import com.kingmakers.createmodels.homemodels.popularGamesModels.domainPopularGamesWinners.PopularGamesWinners
 
 data class PopularGamesWinnersDto(
     val actions: List<ActionDto>?,

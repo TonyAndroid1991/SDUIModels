@@ -1,9 +1,8 @@
 package com.kingmakers.createmodels.homemodels.popularGamesModels.popularGamesWinnersDtos
 
 import com.kingmakers.createmodels.MappableToDomain
-import com.kingmakers.createmodels.homePageCommonModels.Image
-import com.kingmakers.createmodels.homemodels.popularGamesModels.domainPopularGamesWinners.WinnersItem
 import com.kingmakers.createmodels.homePageCommonModels.ImageDto
+import com.kingmakers.createmodels.homemodels.popularGamesModels.domainPopularGamesWinners.WinnersItem
 
 data class WinnersItemDto(
     val amount: String?,

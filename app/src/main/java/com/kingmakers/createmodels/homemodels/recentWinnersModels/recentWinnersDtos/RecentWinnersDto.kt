@@ -14,5 +14,4 @@ data class RecentWinnersDto(
             recentWinnersItems = recentWinnersItems?.map { it.toDomain() } ?: emptyList()
         )
     }
-
 }

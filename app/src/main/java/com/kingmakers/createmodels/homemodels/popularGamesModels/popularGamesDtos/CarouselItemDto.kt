@@ -1,8 +1,8 @@
 package com.kingmakers.createmodels.homemodels.popularGamesModels.popularGamesDtos
 
 import com.kingmakers.createmodels.MappableToDomain
-import com.kingmakers.createmodels.homemodels.popularGamesModels.domainPopularGames.CarouselItem
 import com.kingmakers.createmodels.homePageCommonModels.ImageDto
+import com.kingmakers.createmodels.homemodels.popularGamesModels.domainPopularGames.CarouselItem
 
 data class CarouselItemDto(
     val activeUsers: String?,

@@ -2,9 +2,7 @@ package com.kingmakers.createmodels.homemodels.sportsWithoutRegistered.sportsWit
 
 import com.kingmakers.createmodels.MappableToDomain
 import com.kingmakers.createmodels.homePageCommonModels.ActionDto
-import com.kingmakers.createmodels.homePageCommonModels.Header
 import com.kingmakers.createmodels.homePageCommonModels.HeaderDto
-import com.kingmakers.createmodels.homePageCommonModels.ImageDto
 import com.kingmakers.createmodels.homemodels.sportsWithoutRegistered.domainSportsWithoutRegistered.SportsWithoutRegistered
 
 data class SportsWithoutRegisteredDto(
