@@ -1,7 +1,7 @@
 package com.kingmakers.createmodels.homemodels.component
 
-interface ScreenInterface {
+interface ScreenInterface<T> {
     val id: String
     val analyticsId: String
-    val component: Component
+    val component: Component<T>
 }

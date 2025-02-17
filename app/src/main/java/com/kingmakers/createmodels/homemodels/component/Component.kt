@@ -1,18 +1,14 @@
 package com.kingmakers.createmodels.homemodels.component
 
-import com.kingmakers.createmodels.homemodels.topPromotions.topPromotionsDtos.TopPromotionsDto
+import kotlinx.serialization.SerialName
 
-data class Component(
+data class Component<T>(
     val id: String?,
     val type: EnumType,
-    val data: ComponentType
+    val data: T
 )
 
 enum class EnumType {
-    /**TODO add the @Serialname here*/
-    top_promotions
-}
-
-sealed class ComponentType {
-    data class TopPromotions(val topPromotions: TopPromotionsDto) : ComponentType()
+    @SerialName("top_promotions")
+    TOP_PROMOTIONS
 }
